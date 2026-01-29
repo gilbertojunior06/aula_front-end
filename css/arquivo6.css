@@ -5,12 +5,15 @@
     box-sizing: border-box;
 }
 
-/* Corpo da página */
-body {
+/* Estrutura da página */
+html, body {
+    height: 100%;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #f4f6f9;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Cabeçalho */
@@ -32,6 +35,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 25px;
+    flex-wrap: wrap; /* melhora em telas pequenas */
 }
 
 header nav ul li a {
@@ -53,6 +57,7 @@ header nav ul li a:hover {
 
 /* Conteúdo principal */
 main {
+    flex: 1; /* ocupa o espaço disponível para empurrar o footer para baixo */
     max-width: 1000px;
     margin: 30px auto;
     background: #fff;
@@ -88,8 +93,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
     border-top: 4px solid #4a90e2;
+    margin-top: auto; /* garante que o rodapé fique no fim da página */
 }
 
 footer a {

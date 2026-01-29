@@ -1,20 +1,46 @@
-<!--6. Utilize a tag <b> para deixar uma palavra em negrito dentro do parágrafo (visual).-->
+<!-- Exercício 6: Utilize a tag <strong> para deixar uma palavra em negrito dentro do parágrafo (semântico). -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/arquivo6.css">
 
-    <title>Minha Página</title>
+    <!-- Biblioteca de ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-    <h1>Gilberto Antônio de Almeida Silverio Junior</h1>
-    <p>
-        Sou Gilberto Antônio de Almeida Silverio Junior, estudante de tecnologia apaixonado por <b>programação front-End</b> e desenvolvimento web. 
-        Atualmente dedico meu tempo a aprender novas linguagens e criar projetos práticos que me ajudam a 
-        evoluir como profissional. Além disso, gosto de compartilhar conhecimento e colaborar em trabalhos 
-        em equipe, sempre buscando inovação e criatividade.
-    </p>
+<body id="topo">
+    <header>
+        <h1>Gilberto Antônio de Almeida Silverio Junior</h1>
+    </header>
+
+    <main>
+        <p>
+            Sou Gilberto Antônio de Almeida Silverio Junior, estudante de tecnologia apaixonado por 
+            <strong>programação front-End</strong> e desenvolvimento web. 
+            Atualmente dedico meu tempo a aprender novas linguagens e criar projetos práticos que me ajudam a 
+            evoluir como profissional. Além disso, gosto de compartilhar conhecimento e colaborar em trabalhos 
+            em equipe, sempre buscando inovação e criatividade.
+        </p>
+    </main>
+
+    <footer id="rodape">
+        <p>&copy; 2026 - Todos os direitos reservados</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i> Facebook
+            </a> |
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
+            </a> |
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </p>
+    </footer>
 </body>
 </html>
