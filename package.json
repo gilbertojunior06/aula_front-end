@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node script.js",
-    "deploy": "cmd /c \"git add . && git commit -m 'atualizando arquivos' && git push && node script.js\""
+    "deploy": "git add . && git commit -m \"atualizando arquivos\" && git push && npm start"
   },
   "repository": {
     "type": "git",
