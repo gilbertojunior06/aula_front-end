@@ -4,12 +4,14 @@
   "description": "Lista de exercícios abordados no curso de Front-End",
   "main": "script.js",
   "type": "commonjs",
-  "scripts": {
-    "start": "node script.js",
-    "deploy": "git add . && git commit -m \"atualizando arquivos\" && git push && node script.js"
-  },
   "dependencies": {
     "open": "^11.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js",
+    "deploy": "cmd /c \"git add . && git commit -m 'atualizando arquivos' && git push && node script.js\""
   },
   "repository": {
     "type": "git",
