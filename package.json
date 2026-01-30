@@ -1,27 +1,25 @@
 {
   "name": "aula_front-end",
   "version": "1.0.0",
-  "description": "lista de exercicios abordados no curso de Front- End",
+  "description": "Lista de exercícios abordados no curso de Front-End",
   "main": "script.js",
-  "type": "module",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node script.js",
+    "deploy": "git add . && git commit -m \"atualizando arquivos\" && git push && node script.js"
+  },
   "dependencies": {
     "open": "^11.0.0"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node script.js"
-
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gilbertojunior06/aula_front-end.git"
+    "url": "https://github.com/gilbertojunior06/aula_front-end.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "gilbertojunior06",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gilbertojunior06/aula_front-end/issues"
   },
-  "homepage": "https://github.com/gilbertojunior06/aula_front-end#readme"
+  "homepage": "https://gilbertojunior06.github.io/aula_front-end/"
 }
