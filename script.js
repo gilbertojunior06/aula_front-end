@@ -1,8 +1,12 @@
-import open from "open";
+import { exec } from "child_process";
 
 const url = "https://gilbertojunior06.github.io/aula_front-end/";
 
-// Forçar abrir no Brave
-open(url, { app: { name: "brave" } })
-  .then(() => console.log("🌐 Site aberto no Brave!"))
-  .catch(err => console.error("❌ Erro ao abrir site:", err));
+// Abrir no navegador padrão (Brave, se estiver configurado como padrão)
+exec(`start ${url}`, (err) => {
+  if (err) {
+    console.error("❌ Erro ao abrir site:", err);
+  } else {
+    console.log("🌐 Site aberto no navegador padrão!");
+  }
+});
