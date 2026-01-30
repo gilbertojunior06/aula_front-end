@@ -1,61 +1,77 @@
-Pular para o conteúdo principal
-Google Sala de Aula
-Sala de Aula
-Front-End
-Início
-Agenda
-Minhas inscrições
-Pendentes
-F
-Front-End
-Turmas arquivadas
-Configurações
-Detalhes da atividade
-Treinando HTML
-Natália Lima De Oliveira
-•
-Ontem
-10 pontos
-Para Treinarmos o que exploramos em sala de aula segue lista de exercícios, os scripts devem ser enviados em uma pasta zipada.
-exercicios_aula_html_front-end.pdf
-PDF
-
-Comentários da turma
-Seus trabalhos
-Atribuído
-index.html
-HTML
-
-nivel1.html
-HTML
-
-nivel2.html
-HTML
-
-aula_front-end.zip
-Arquivo compactado
-
-aula_front-end.zip
-Arquivo compactado
-
-Comentários particulares
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/arquivo6.css">
+
+    <title>Página Semântica regras</title>
 </head>
 <body>
-    <h1>Bem vindos 👍 </h1> 
-    <p> Este é o nosso site 😊</p>
-    <p> Curso de desenvolvedor de Front -End </p>
-    <p> Com a professora Natalia Senai da Vila Mariana</p>
-    <p>Veja este site: unsplash <a href="https://unsplash.com/pt-br">Clique aqui</a></p>
-    <p>Veja este site: linguagem de marcaçao de hipertexto <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Clique aqui</a></p>
-    <img src="https://images.unsplash.com/photo-1768430309142-632889e10e86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D">
+    <!-- Cabeçalho com hora atual -->
+    <header id="topo">
+        <h1>Regras para semancia do site</h1>
+        <nav>
+            <ul>
+                <li><a href="#topo">Início</a></li>
+                <li><a href="arquivo6.html">Conteúdo</a></li>
+                <li><a href="#rodape">Rodapé</a></li>
+                <li><a href="#localizacao">Nossa Localização</a></li>
+            </ul>
+        </nav>
+        <!-- Tag time para mostrar o horário -->
+        <p>Horário atual: <time id="horaAtual"></time></p>
+    </header>
+
+    <main id="conteudo">
+        <section>
+            <h2>Primeira Sessão</h2>
+            <article>
+                <p>Conteúdo da primeira sessão sobre o Gilberto...</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Segunda Sessão</h2>
+            <article>
+                <p>Conteúdo da segunda sessão...</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Links e informações extras.</p>
+        </aside>
+
+        <section id="localizacao">
+            <h2>Nossa Localização</h2>
+            <p>SENAI Anchieta - São Paulo/SP</p>
+            <p><a href="https://www.google.com/maps/search/SENAI+Anchieta+SP" target="_blank">Ver no Google Maps</a></p>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p>2026 - Todos os direitos reservados</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </p>
+    </footer>
+
+    <!-- Script para atualizar o horário -->
+    <script>
+        function atualizarHora() {
+            const agora = new Date();
+            const horaFormatada = agora.toLocaleTimeString('pt-BR');
+            document.getElementById('horaAtual').textContent = horaFormatada;
+        }
+        atualizarHora();
+        setInterval(atualizarHora, 1000);
+    </script>
 </body>
 </html>
-
-index.html
-Exibindo index.html…
