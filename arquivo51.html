@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI - Curso Front-End</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS externo -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">S</div>
+                <span class="logo-text">SENAI - Curso Front-End</span>
+            </a>
+
+            <!-- Navegação -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#post" class="nav-link">Posts</a></li>
+                    <li><a href="#comentarios" class="nav-link">Comentários</a></li>
+                    <li><a href="#rodape" class="nav-link">Rodapé</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ações do cabeçalho -->
+            <div class="header-actions">
+                <a href="#" class="btn-portal">Portal do Aluno</a>
+                <a href="#" class="btn-enroll">Matrículas Abertas</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <!-- Conteúdo principal do post -->
+        <article id="post">
+            <h2>Introdução ao HTML Semântico</h2>
+            <p><em>Publicado em 28 de janeiro de 2026 por Professor(a) SENAI</em></p>
+            
+            <!-- Imagem ilustrativa -->
+            <img src="https://www.brasilcode.com.br/wp-content/uploads/2024/11/html-semantico.webp" 
+            alt="Exemplo de HTML Semântico" 
+            class="post-img">
+
+            <p>
+                Nesta aula de Front-End no SENAI, aprendemos sobre a importância das tags semânticas no HTML,
+                como <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> e <code>&lt;aside&gt;</code>.
+            </p>
+            
+            <p>
+                O uso correto dessas tags melhora a acessibilidade, o SEO e deixa o código mais organizado
+                para futuros desenvolvedores que irão dar manutenção.
+            </p>
+        </article>
+
+        <!-- Seção de comentários -->
+        <section id="comentarios">
+            <h3>Comentários dos Alunos</h3>
+            <article class="comentario">
+                <img src="https://www.pensarcontemporaneo.com/content/uploads/2023/01/image-1-1068x722.jpg" 
+                    alt="Foto de Carlos" 
+                    class="avatar">
+                <div class="conteudo">
+                    <h4>ana</h4>
+                    <p>Gostei muito da explicação sobre <code>&lt;aside&gt;</code>, nunca tinha entendido bem!</p>
+                </div>
+            </article>
+            <article class="comentario">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS97h5PsMDsjpHqK3_jSbKU2OS1VMQVsKYAzg&s" 
+                    alt="Foto de Carlos" 
+                    class="avatar">
+                <div class="conteudo">
+                    <h4>Carlos</h4>
+                    <p>O exemplo prático ajudou bastante a visualizar como usar <code>&lt;section&gt;</code>.</p>
+                </div>
+            </article>
+            <article class="comentario">
+                <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/b1d8/live/e3d74030-9d4e-11f0-928c-71dbb8619e94.jpg.webp" 
+                    alt="Foto de Carlos" 
+                    class="avatar">
+                <div class="conteudo">
+                    <h4>gisele</h4>
+                    <p>Gostei muito da explicação sobre <code>&lt;aside&gt;</code>, nunca tinha entendido bem!</p>
+                </div>
+            </article>
+            <article class="comentario">
+                <img src="https://i.pinimg.com/236x/19/8a/bd/198abd0730e616bf1c3afc692d16f2ac.jpg" 
+                    alt="Foto de Carlos" 
+                    class="avatar">
+                <div class="conteudo">
+                    <h4>junior</h4>
+                    <p>os alunos sao muito empolgados</p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Materiais da Aula</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Documentação HTML</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">Documentação CSS</a></li>
+                <li><a href="https://git-scm.com/book/pt-br/v2">Guia Git</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé com âncora -->
+
+    <footer id="rodape">
+        <p>&copy; 2026 - SENAI Front-End. Projeto desenvolvido em sala de aula.</p>
+        
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
