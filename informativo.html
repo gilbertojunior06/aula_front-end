@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_informativo.css">
+    <title>FlexBOX</title>
+</head>
+<body>
+    <main class="wrapper">
+        <header>
+            <h1>Flexbox vs CSS Grid</h1>
+            <p>
+                Uma comparação visual e técnica dos sistemas de layout
+            </p>
+        </header>
+        <div class="controls-panel">
+            <section class="controls-card">
+                <h3><span class="dot" style="background: var(--primary);"></span>Escolher Layout</h3>
+                <div class="button-group">
+                    <button id="btnFlex" class="btn active-flex">FlexBox</button>
+                    <button id="btnGrid" class="btn">Grid</button>
+                </div>
+            </section>
+            <section class="controls-card">
+                <h3><span class="dot" style="background: #94a3b8;"></span>Resumo do Comportamento</h3>
+                <div id="statusInfo">
+                    <p id="txtAxis" style="margin: 5px 0; font-weight: 600;">Unidimencional</p>
+                    <p id="txtIdeal" style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">O layout é calculado item a item. Ótimo para distribuir espaço em uma linha</p>
+                </div>
+            </section>
+            <section id="demoContainer" class="demo-container mode-flex">
+                <!-- Gerado dinamicamente-->
+            </section>
+            <footer class="info-footer">
+                <div class="info-box info-flex">
+                    <h4>O poder do flexbox</h4>
+                    <ul>
+                        <li>Foco no <strong>conteúdo</strong></li>
+                        <li>Ideal para componentes pequenos (menus, botões)</li>
+                        <li>Facilidade em alinhar itens em um único eixo.</li>
+                        <li>Flexibilidade: itens podem crescer e encolher dinâmicamente.</li>
+                    </ul>
+                </div>
+                <div class="info-box info-grid">
+                    <h4>O poder do Grid</h4>
+                    <ul>
+                        <li>Foco no <strong>layout</strong> (container).</li>
+                        <li>Ideal para estruturas de páginas completas.</li>
+                        <li>Controle total de linhas e colunas simultâneamente.</li>
+                        <li>Perfeito para galerias onde o alinhamento vertical importa.</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

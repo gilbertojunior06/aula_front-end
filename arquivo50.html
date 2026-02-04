@@ -1,0 +1,66 @@
+50. Crie uma estrutura completa de blog post usando <article>, <section> para os
+comentários e <aside> para a barra lateral.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Semântico</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Conteúdo principal do post -->
+        <article>
+            <h2>Título do Post</h2>
+            <p><em>Publicado em 28 de janeiro de 2026 por Autor</em></p>
+            
+            <p>
+                Este é o conteúdo principal do post do blog. Aqui você pode escrever um artigo completo,
+                incluir imagens, links e qualquer informação relevante para os leitores.
+            </p>
+            
+            <p>
+                O uso de tags semânticas ajuda na acessibilidade, SEO e organização do conteúdo.
+            </p>
+        </article>
+
+        <!-- Seção de comentários -->
+        <section>
+            <h3>Comentários</h3>
+            <article>
+                <h4>Maria</h4>
+                <p>Gostei muito do conteúdo, parabéns!</p>
+            </article>
+            <article>
+                <h4>João</h4>
+                <p>Excelente explicação sobre tags semânticas, ajudou bastante.</p>
+            </article>
+        </section>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Barra Lateral</h3>
+            <ul>
+                <li><a href="#">Post mais recente</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Arquivo</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

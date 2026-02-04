@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/arquivo6.css">
+
+    <title>Página Semântica regras</title>
+</head>
+<body>
+    <!-- Cabeçalho com hora atual -->
+    <header id="topo">
+        <h1>Regras para semancia do site</h1>
+        <nav>
+            <ul>
+                <li><a href="#topo">Início</a></li>
+                <li><a href="arquivo6.html">Conteúdo</a></li>
+                <li><a href="#rodape">Rodapé</a></li>
+                <li><a href="#localizacao">Nossa Localização</a></li>
+            </ul>
+        </nav>
+        <!-- Tag time para mostrar o horário -->
+        <p>Horário atual: <time id="horaAtual"></time></p>
+    </header>
+
+    <main id="conteudo">
+        <section>
+            <h2>Primeira Sessão</h2>
+            <article>
+                <p>Conteúdo da primeira sessão sobre o Gilberto...</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Segunda Sessão</h2>
+            <article>
+                <p>Conteúdo da segunda sessão...</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Links e informações extras.</p>
+        </aside>
+
+        <section id="localizacao">
+            <h2>Nossa Localização</h2>
+            <p>SENAI Anchieta - São Paulo/SP</p>
+            <p><a href="https://www.google.com/maps/search/SENAI+Anchieta+SP" target="_blank">Ver no Google Maps</a></p>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p>2026 - Todos os direitos reservados</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </p>
+    </footer>
+
+    <!-- Script para atualizar o horário -->
+    <script>
+        function atualizarHora() {
+            const agora = new Date();
+            const horaFormatada = agora.toLocaleTimeString('pt-BR');
+            document.getElementById('horaAtual').textContent = horaFormatada;
+        }
+        atualizarHora();
+        setInterval(atualizarHora, 1000);
+    </script>
+</body>
+</html>
