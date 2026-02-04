@@ -128,7 +128,22 @@ header h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
-
+.galery-item hover {
+    transform: translateY(-5px);
+}
+.content-box {
+    padding: 15px;
+}
+.content-box h4 {
+    margin: 0 0 8px 0;
+    color: var(--text-muted);
+}
+.content-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
 .info-footer {
     margin-top: 40px;
     display: grid;
