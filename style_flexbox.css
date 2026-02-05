@@ -5,6 +5,7 @@
     div {
         border: 1px solid blue;
     }
+<<<<<<< HEAD
 }
 .box-grid {
     display: grid;
@@ -15,4 +16,6 @@
         border: 1px solid lawngreen;
         gap: 20px;
     }
+=======
+>>>>>>> f727db04575f5ead2c0bdef6cff1fd0edf8a80d9
 }
