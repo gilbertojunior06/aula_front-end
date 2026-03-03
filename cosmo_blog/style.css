@@ -1,0 +1,104 @@
+:root {
+    --space-black: #0b0d17;
+    --star-white: #ffffff;
+    --nebula-purple: #6d28d9;
+    --cosmic-blue: #1e3a8a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--space-black);
+    color: var(--star-white);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient( circle at center, var(--cosmic-blue) 0%, var(--space-black) 70%);
+    padding: 20px;
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;/* 1rem => 16px*/
+    margin-bottom: 1rem;
+    letter-spacing: 5px;
+    color: var(--star-white);
+}
+.subtitle {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    max-width: 600px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--nebula-purple);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.card {
+    background: rgba(255,255,255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    transition: transform 0.3s ease;
+}
+.card.hover {
+    border-color: var(--nebula-purple);
+    transform: translateY(-10px);
+}
+.card h3 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+    color: var(--cosmic-blue);
+}
+.cta-button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-family: 'Orbitron', sans-serif;
+    background: var(--nebula-purple);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease;
+}
+.cta-button:hover {
+    box-shadow: 0 0 20px var(--nebula-purple);
+}
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9rem;
+    color: #475569;
+    border-top: 1px solid #1e293b;
+}
+@media(max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+}
